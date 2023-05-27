@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Farsan&family=Sofia+Sans+Semi+Condensed&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /*CSS Reset */
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+            height: 1367px;
+            background-size: 2067px;
+            color: white;
+        }
+
+        header {
+            margin-top: 15px
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 40px;
+            /* border: 2px solid red; */
+            text-align: left;
+
+        }
+
+        .left img {
+            text-align: left;
+            width: 70px;
+            filter: invert(100%);
+        }
+
+        .txt {
+            position: absolute;
+            left: 81px;
+            top: -5px;
+            font-size: 37px;
+        }
+
+        .mid {
+            display: inline-block;
+            position: absolute;
+            left: 500px;
+            right: 500px;
+            /* border: 2px solid red; */
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            /* border: 2px solid red; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 30px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 43px;
+            padding-left: 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .btn {
+            font-family: 'Sofia Sans Semi Condensed', sans-serif;
+            margin: 17px 9px;
+            background-color: #1d1e20;
+            color: white;
+            padding: -10px 0px;
+            font-size: 25px;
+            border: 1px hidden white;
+
+            cursor: pointer;
+
+        }
+
+        .bn {
+            font-family: 'Sofia Sans Semi Condensed', sans-serif;
+            margin: 17px 9px;
+            background-color: #1d1e20;
+            color: white;
+            padding: -10px 0px;
+            font-size: 25px;
+            border: 1px hidden white;
+            border: 2px solid white;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            color: white;
+
+            text-decoration: underline;
+        }
+
+        .bn:hover {
+            color: white;
+
+            text-decoration: underline;
+        }
+
+        .container {
+            position: absolute;
+            top: 180px;
+            border: 2px solid white;
+            margin: 5px 87px;
+            padding: 25px;
+            padding-bottom: 62px;
+            width: 42%;
+            border-radius: 20px;
+        }
+
+        .form-group input {
+            font-family: 'Sofia Sans Semi Condensed', sans-serif;
+
+            text-align: center;
+            margin: 10px auto;
+            font-size: 30px;
+            display: block;
+            padding: 6px;
+            width: 490px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+
+        .container h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 40px;
+        }
+
+        .container button {
+            display: block;
+            width: 63%;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div class="txt">Body Systems</div>
+        </div>
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#">Trainers</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <button class="btn" class="active">Contact us</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Hyderabad now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="bn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
